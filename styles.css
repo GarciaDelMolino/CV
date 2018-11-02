@@ -126,6 +126,7 @@
 		grid-template-columns: auto;
 		grid-template-areas:
 			"lang hobby";
+		align-items: center;		
 	}
 	
 	.exp_item {
@@ -194,10 +195,7 @@
 		white-space: nowrap;
 	}
 	
-	@media (max-width: 1050px){
-		body {
-			width: auto;
-		}
+	@media (max-width: 750px){
 		.header {
 			grid-template-columns: auto;
 			grid-template-areas:
@@ -252,10 +250,7 @@
 		}
 	}
 	
-	@media (max-width: 550px and min-width: 400px){
-		  body {
-			font-size: .9em;
-		  }
+	@media (max-width: 750px and min-width: 400px){
 		.header {
 			grid-template-columns: auto;
 			grid-template-areas:
@@ -266,6 +261,13 @@
 		}
 	}
 
+	@media (max-width: 1050px){
+		  body {
+			width: auto;
+			font-size: .8em;
+		  }
+	}
+	
 	@media (max-width: 480px){
 		  body {
 			width: 480px;
