@@ -1,0 +1,175 @@
+	html {
+		font: 400 10pt 'Open Sans',sans-serif;
+		text-rendering: optimizeLegibility;
+	}
+
+	/*color palete: 
+	HEX: #e4d1d1
+	HEX: #b9b0b0
+	HEX: #d9ecd0
+	HEX: #77a8a8
+	HEX: #9e7e2f
+	*/
+
+	body {
+		padding: 1em;
+		height: 1485px;
+		width: 1050px;
+		margin: auto;
+	}
+
+	a {
+		color: #005751;/*#337ab7;*/
+		text-decoration: none;
+	}
+
+	h1 {
+		margin: 0;
+		font-weight: 300;
+		font-size: 24pt;
+	}
+
+	.heading {
+		margin: 0;
+		font-weight: 400;
+		font-size: 18pt;
+		overflow: hidden;
+		text-align: center;
+		font-weight:300;
+		color: #384B7C;
+	}
+	.heading:before, .heading:after {
+	  content: "";
+	  display: inline-block;
+	  width: 50%;
+	  margin: 0 1em 0 -55%;
+	  vertical-align: middle;
+	  border-bottom: 1px solid;
+	}
+	.heading:after {
+	  margin: 0 -55% 0 1em;
+	}
+
+	.header {
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"photo name name"
+			"photo desc contact";
+		align-items: center;
+		grid-row-gap: 1em;
+		padding: 1em;
+		margin: 0 7% 0 7%;
+	}
+
+	.header p {
+		text-align: center; 
+		font-style: italic; 
+		padding: 0 3em 0 3em;
+		margin: 0;
+	}
+	
+	.icon {
+		height:12px;
+		color:#44e182;
+		align: right;
+	}
+	
+	.experience {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"title title title"
+			"i2r gifs gifs"
+			"i2r nii upc";
+		grid-row-gap: 1em;
+		align-items: center;
+		margin: 0 7% 0 7%;
+	}
+	
+	.education {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"title title title"
+			"ntu ntu upc"
+			"lang skills skills"
+			"skills2 skills2 skills2";
+		grid-row-gap: 1em;
+		align-items: center;
+		margin: 1em 7% 0 7%;
+	}
+	.education .box {
+		align-items: center;
+		padding: 1em;
+		margin: 5px 5px 0 5px;
+		box-sizing: border-box;
+		border: 1px solid #9e7e2f;
+		height: 100%;
+	}
+	.education .box p {
+		margin-block-end: 0.3em;
+		margin-block-start: 0em;
+	}
+	.education .box .icon {
+		height:20px;
+	}
+	
+	.exp_item {
+		display: grid;
+		grid-template-columns: 0fr 10fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"logo info"
+			"project project";
+		grid-row-gap: 1em;
+		align-items: center;
+		padding: 1em;
+		margin: 5px 5px 5px 5px;
+		box-sizing: border-box;
+		border: 1px solid #384B7C;
+		height: 100%;
+	}
+
+	.edu_item {
+		display: grid;
+		grid-template-columns: 0fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"left right";
+		grid-row-gap: 1em;
+		align-items: center;
+		padding: 1em;
+		margin: 5px 5px 5px 5px;
+		height: 100%;
+	}
+	
+	.project_desc{
+		grid-area: project;
+		align:left;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+
+	td {
+		padding: 0 .2em 0 .2em;
+	}
+	
+	.project_desc td {
+		padding: .5em .2em 0.5em .2em;
+	}
+	
+	.education td {
+	    height: 2em;
+	}
+	
+	.education .heading {
+		color: #9e7e2f;
+	}
+	
+	

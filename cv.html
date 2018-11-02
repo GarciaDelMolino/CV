@@ -2,139 +2,11 @@
 <meta charset='UTF-8' name="viewport" content="width=device-width, initial-scale=1">
 <html>
 <head>
-	<!-- Grid -->	
-	<style>
-	html {
-		font: 400 10pt 'Open Sans',sans-serif;
-		text-rendering: optimizeLegibility;
-	}
-
-	/*color palete: 
-	HEX: #e4d1d1
-	HEX: #b9b0b0
-	HEX: #d9ecd0
-	HEX: #77a8a8
-	HEX: #C3B262
-	*/
-
-	body {
-		padding: 1em;
-		height: 1485px;
-		width: 1050px;
-		margin: auto;
-	}
-
-	a {
-		color: #005751;/*#337ab7;*/
-		text-decoration: none;
-	}
-
-	h1 {
-		margin: 0;
-		font-weight: 300;
-		font-size: 24pt;
-	}
-
-	.header {
-		display: grid;
-		grid-template-columns: 1fr 5fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"photo name name"
-			"photo desc contact";
-		align-items: center;
-		grid-row-gap: 1em;
-		padding: 1em;
-		margin: 0 7% 35px 7%;
-	}
-
-	.header p {
-		text-align: center; 
-		font-style: italic; 
-		padding: 0 3em 0 3em;
-		margin: 0;
-	}
-	
-	.experience {
-		display: grid;
-		grid-template-columns: 1.2fr 1fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"i2r gifs gifs"
-			"i2r nii upc";
-		grid-row-gap: 1em;
-		align-items: center;
-		margin: 0 7% 0 7%;
-	}
-	
-	.education {
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"ntu upc";
-		grid-row-gap: 1em;
-		align-items: center;
-		margin: 0 7% 0 7%;
-	}
-	
-	.exp_item {
-		display: grid;
-		grid-template-columns: 0fr 10fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"logo info"
-			"project project";
-		grid-row-gap: 1em;
-		align-items: center;
-		padding: 1em;
-		margin: 5px 5px 5px 5px;
-		box-sizing: border-box;
-		border: 1px solid #77a8a8;
-		height: 100%;
-	}
-
-	.edu_item {
-		display: grid;
-		grid-template-columns: 0fr 1fr;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"left right";
-		grid-row-gap: 1em;
-		align-items: center;
-		padding: 1em;
-		margin: 5px 5px 5px 5px;
-		height: 100%;
-	}
-	
-	.project_desc{
-		grid-area: project;
-		align:left;
-	}
-	
-	table {
-		border-collapse: collapse;
-	}
-
-	td {
-		padding: 0 .2em 0 .2em;
-	}
-	
-	.project_desc td {
-		padding: 1em .2em 0.5em .2em;
-	}
-	
-	.icon {
-		height:12px;
-		color:#44e182;
-		align: "right";
-	}
-	</style>
     <title>Ana Garcia del Molino</title>
-
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -170,6 +42,7 @@
 		</div>		      
 	</div>
 	<div class="experience">
+		<h2 class="heading" style="grid-area: title;font-weight: 400;">Research Experience</h2> 
 		<div class="exp_item" style="grid-area: i2r;">
 			<div style="grid-area: logo;"><a href="https://www.a-star.edu.sg/i2r"> <img  src="IMG/A-STAR.jpg", style="height:50pt; align: left"> </a></div>
 			<div style="grid-area: info; padding: 0 0 0 1em;" align="left">			
@@ -188,7 +61,7 @@
 				  </tr>
 				  <tr>
 					<td align="right"><img class="icon"  src="IMG/icons/user.svg"></td>
-					<td align="left"> Supervised by <a href="">Joo-Hwee Lim</a></td>
+					<td align="left"> Supervised by <a href="https://researchers.a-star.edu.sg/userprofile.aspx?userid=4775">Joo-Hwee Lim</a></td>
 				  </tr>
 				</table>
 			</div>		      
@@ -200,8 +73,9 @@
 				  </tr>
 				  <tr>
 					<td style="align:right; vertical-align:top"><a href="https://arxiv.org/abs/1808.02289"><img class="icon"  src="IMG/icons/file-text.svg"></a></td>
-					<td align="left">Use of LSTM networks for lifelog event understanding and segmentation.</td>
+					<td align="left">Modeling of lifelog photo-stream sequences using LSTM networks, to detect daily activities and learn associations between life events.</td>
 				  </tr>
+		
 				  <tr>
 					<td style="align:right; vertical-align:top"><a href="http://ceur-ws.org/Vol-1866/paper_86.pdf"><img class="icon"  src="IMG/icons/file-text.svg"></a></td>
 					<td align="left">Use of image quality analysis and semantic retrieval techniques for query-based lifelog summarization.</td>
@@ -210,24 +84,20 @@
 			</div>
 		</div>
 		<div class="exp_item" style="grid-area: gifs;">
-			<div style="grid-area: logo;"><a href="https://gifs.com/"> <img  src="IMG/GIFS.png", style="height:50pt; align: left"> </a> </div>
-			<div style="grid-area: info;padding: 0 0 0 1em;" align="left">			
-				<table>
+			<div style="grid-area: logo;"><a href="https://gifs.com/"> <img  src="IMG/gifsdotcom.png", style="height:20pt; align: left"> </a> </div>
+			<div style="grid-area: info;padding: 0 0 0 1em;" align="left">	
+			<table>
 				  <tr>
 					<td align="right"><img class="icon" src="IMG/icons/map-pin.svg"></td>
 					<td align="left">gifs.com, Zurich</td>
-				  </tr>
-				  <tr>
-					<td align="right"><img class="icon"  src="IMG/icons/calendar.svg"></td>
-					<td align="left">June 2017-Sept 2017</td>
-				  </tr>
-				  <tr>
 					<td align="right"><img class="icon"  src="IMG/icons/info.svg"></td>
 					<td align="left"> Research Consultant </td>
 				  </tr>
 				  <tr>
+					<td align="right"><img class="icon"  src="IMG/icons/calendar.svg"></td>
+					<td align="left" style="padding: 0 1em 0 .2em;">June 2017-Sept 2017</td>
 					<td align="right"><img class="icon"  src="IMG/icons/user.svg"></td>
-					<td align="left"> With  <a href="">Michael Gygli</a> </td>
+					<td align="left"> With  <a href="https://ai.google/research/people/105744">Michael Gygli</a> </td>
 				  </tr>
 				</table>
 			</div>		      
@@ -258,7 +128,7 @@
 				  <tr>
 					<td align="right"><img class="icon"  src="IMG/icons/users.svg"></td>
 					<td align="left"> With <a href="http://research.nii.ac.jp/~satoh/">Shin'ichi Satoh</a> and 
-					<div><a href="">Xavier Giró-i-Nieto</a></div></td>
+					<div><a href="https://imatge.upc.edu/web/people/xavier-giro">Xavier Giró-i-Nieto</a></div></td>
 				  </tr>
 				</table>
 			</div>		      
@@ -283,7 +153,7 @@
 				  </tr>
 				  <tr>
 					<td align="right"><img class="icon"  src="IMG/icons/user.svg"></td>
-					<td align="left"> With <a href="https://imatge.upc.edu/web/info/image-processing-group-gpi">Ferran Marqués</a></td>
+					<td align="left"> With <a href="https://imatge.upc.edu/web/people/ferran-marques">Ferran Marqués</a></td>
 				  </tr>
 				</table>
 			</div>		      
@@ -291,10 +161,11 @@
 				Exploration of image processing techniques for object tracking applied to sports.
 			</div>
 		</div>
-	</div>
+	</div>	
 	<div class="education">
+		<h2 class="heading" style="grid-area: title;font-weight: 400;">Education and Skills</h2> 
 		<div class="edu_item" style="grid-area: upc;">
-			<img  src="IMG/upc.png", style="grid-area: left; height:50px; align: left">
+			<a href="https://telecos.upc.edu/en"><img  src="IMG/upc.png", style="grid-area: left; height:50px; align: left"></a>
 			<div style="grid-area: right;">
 				<b>BSc. and MSc. in Telecomm Engineering</b>
 				<div style="padding:1em 1em 0em 1em"><img class="icon"  src="IMG/icons/map-pin.svg"> TelecommBCN (ETSETB)
@@ -302,14 +173,97 @@
 			</div>
 		</div>
 		<div class="edu_item" style="grid-area: ntu;">
-			<img  src="IMG/ntu.png", style="grid-area: left; height:50px; align: left">
+			<a href="http://scse.ntu.edu.sg/Programmes/CurrentStudents/Graduate/Pages/PhD_CSVC_home.aspx"><img  src="IMG/ntu.png", style="grid-area: left; height:50px; align: left"></a>
 			<div style="grid-area: right;">
 				<b>PhD. in Cognitive Systems and Visual Computing</b>
 				<div style="padding:1em 1em 0em 1em"><img class="icon"  src="IMG/icons/map-pin.svg"> School of Computer Science and Engineering
 					<div><img class="icon"  src="IMG/icons/calendar.svg"> 2015-(expected Summer 2019)</div></div>
 			</div>
 		</div>
+		<div style="grid-area: lang; padding: 1em 1.5em 1em 1em;">
+				<table>
+				  <tr>
+					<td align="right"><img class="icon" src="IMG/flag/es.png"> </td>
+					<td align="left">Native Speaker</td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon"  src="IMG/flag/cat.png"></td>
+					<td align="left">Native Speaker</td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon"  src="IMG/flag/gb.png"></td>
+					<td align="left"> Fluent (TOEFL 103/120) </td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon"  src="IMG/flag/fr.png"></td>
+					<td align="left"> Proficient (CEFRL B2.2)</td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon"  src="IMG/flag/de.png"></td>
+					<td align="left"> Beginner (CEFRL A1)</td>
+				  </tr>
+				</table>		
+		</div>
+		<div class="box" style="grid-area: skills;">
+			<table style="margin-bottom: 1em;">
+				  <tr>
+					<td align="right"><img class="icon" src="IMG/icons/monitor.svg"> </td>
+					<td align="left" style="padding: 0 1em 0 .2em; white-space: nowrap;">Proficient in Matlab, Python, TensorFlow, OpenCV.
+									<div>Prior experience with Caffe, C++, SQL, HTML, CSS.</div></td>
+					<td align="right"><img class="icon" src="IMG/icons/anchor.svg"> </td>
+					<td align="left">I enjoy sailing, the cinema and the opera, playing board games... And I make earrings!</td> 
+					<!-- 
+					<td align="left"><i>A few pleasures</i>: sailing, baking, board games, cinema, opera, arts and crafts (I make earrings!).</td> -->
+				  </tr>
+			</table>		  
+			<p> <i> Make the most of your hobbies!</i>  I was a sailing instructor in Barcelona the summers of ’08 to ’12.</p>
+			<p> <i> Causes that matter.</i> I am part of the leadership of the LeanIn Circle "AI Singapore".</p>
+			<div> <i> Commitment to the community.</i> During my undergrad, I was part of several student associations: </div>
+			<div style="padding: 0 0 0 1em;">Vice-President of the IEEE Barcelona Student Branch in 2011-2013;</div>
+			<div style="padding: 0 0 0 1em;">Member of the School’s Evaluation Committee and Board; intern at the International Student Office.</div>
+									
+		</div>
 	</div>
-	
-	
+	<div class="education", style="grid-template-columns: 1fr 1fr 2fr;">
+		<h2 class="heading" style="grid-area: title; color: #35894E; font-weight: 400;">Honors and Awards</h2> 
+		<div class="edu_item" style="grid-area: upc;">
+			<img  src="IMG/lacaixa.png", style="grid-area: left; height:50px; align: left">
+			<div style="grid-area: right; padding-left:1em;">
+				<b>Obra Social "La Caixa"</b> <img class="icon"  src="IMG/icons/calendar.svg" style="padding-left: 1em;"> 2014
+				<div style="padding:1em 1em 0em 1em">Private fellowship to support postgraduate studies in North America and Asia-Pacific.</div>
+			</div>
+		</div>
+		<div class="edu_item" style="grid-area: ntu;">
+			<img  src="IMG/A-STAR.jpg", style="grid-area: left; height:50px; align: left">
+			<div style="grid-area: right; padding-left:1em;">
+				<b>SINGA Scholarship</b><img class="icon"  src="IMG/icons/calendar.svg" style="padding-left: 1em;"> 2015
+				<div style="padding:1em 1em 0em 1em">Award given by A*STAR to international students to pursue their PhD at a Singapore University.</div>
+			</div>
+		</div>	
+		<!-- referees 
+		<div class="box" style="grid-area: skills2; border: 1px solid #35894E; padding-top: 0; text-align:center;margin:auto;">
+			<h3 style="text-align:center">Who can vouch for me?</h3>
+			<p><img class="icon"  src="IMG/icons/user.svg"> LIM Joo-Hwee (I2R, A*STAR), my PhD main supervisor. <a href="mailto:joohwee@i2r.a-star.edu.sg">joohwee@i2r.a-star.edu.sg</a></p>
+			<p><img class="icon"  src="IMG/icons/user.svg"> TAN Ah-Hwee (SCSE, NTU), my PhD accademic supervisor. <a href="mailto:ASAHTan@ntu.edu.sg">ASAHTan@ntu.edu.sg</a></p>
+			<p><img class="icon"  src="IMG/icons/user.svg"> Xavi Giro-i-Nieto (ETSETB, UPC), my MSc supervisor and mentor. <a href="mailto:xavier.giro@upc.edu">xavier.giro@upc.edu</a></p>
+			<p><img class="icon"  src="IMG/icons/user.svg"> Michael Gygli (Google AI, Zurich), project leader and co-author. <a href="mailto:gyglim@google.com">gyglim@google.com</a></p>
+		</div>		-->	
+	</div>
+	<div class="experience"><div style="grid-area: title">
+		<h2 class="heading" style="color:#77a8a8; font-weight: 400;">Selected Publications</h2>
+		<div style="margin:1em; text-align: justify;">
+		<p><a href="https://dl.acm.org/citation.cfm?id=3240624"><img class="icon"  src="IMG/icons/file-text.svg"></a>
+			Ana Garcia del Molino, Joo-Hwee Lim, and Ah-Hwee Tan. 2018. Predicting Visual Context for Unsupervised Event Segmentation in Continuous Photo-streams. In <i>Proceedings of the 26th ACM international conference on Multimedia (MM '18).</i>
+		</p>
+		<p><a href="https://dl.acm.org/citation.cfm?id=3240599"><img class="icon"  src="IMG/icons/file-text.svg"></a>
+			Ana Garcia del Molino and Michael Gygli. 2018. PHD-GIFs: Personalized Highlight Detection for Automatic GIF Creation. In <i>Proceedings of the 26th ACM international conference on Multimedia (MM '18).</i>
+		</p>
+		<p><a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14856"><img class="icon" src="IMG/icons/file-text.svg"></a> 
+			Ana Garcia del Molino, Xavier Boix, Joo-Hwee Lim, and Ah-Hwee Tan. 2017. Active Video Summarization: Customized Summaries via On-line Interaction with the User. In <i>AAAI Conference on Artificial Intelligence.</i>
+		</p>
+		<p><a href="https://ieeexplore.ieee.org/abstract/document/7750564/"><img class="icon" src="IMG/icons/file-text.svg"></a>
+			Ana Garcia del Molino, Cheston Tan, Joo-Hwee Lim, and Ah-Hwee Tan. 2017. Summarization of Egocentric Videos: A Comprehensive Survey. In <i>IEEE Transactions on Human-Machine Systems, 47(1).</i>
+		</p>		
+		<p style="text-align: center;">(More in my <a href="https://scholar.google.com.sg/citations?user=MtVjIIAAAAAJ&hl=en">Scholar</a> profile)</p>
+	</div></div></div>
 </body>
