@@ -1,1 +1,1 @@
-### Check it out [here](https://garciadelmolino.github.io/CV/cv.html)! 
+### Check out my CV [here](https://garciadelmolino.github.io/CV/cv.html)! 
