@@ -13,7 +13,6 @@
 
 	body {
 		padding: 1em;
-		height: 1485px;
 		width: 1050px;
 		margin: auto;
 	}
@@ -35,7 +34,6 @@
 		font-size: 18pt;
 		overflow: hidden;
 		text-align: center;
-		font-weight:300;
 		color: #384B7C;
 	}
 	.heading:before, .heading:after {
@@ -63,6 +61,11 @@
 		margin: 0 7% 0 7%;
 	}
 
+	.header h1 {
+		font-weight: 900; 
+		text-align: right;  
+		color: #265e5e;
+	}
 	.header p {
 		text-align: center; 
 		font-style: italic; 
@@ -118,6 +121,14 @@
 		height:20px;
 	}
 	
+	#skills {
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-areas:
+			"lang hobby";
+		align-items: center;		
+	}
+	
 	.exp_item {
 		display: grid;
 		grid-template-columns: 0fr 10fr;
@@ -132,6 +143,13 @@
 		box-sizing: border-box;
 		border: 1px solid #384B7C;
 		height: 100%;
+	}
+	
+	#gifs {
+		grid-template-columns: 0fr auto auto;
+		grid-template-areas:
+			"logo info1 info2"
+			"project project project";
 	}
 
 	.edu_item {
@@ -172,4 +190,87 @@
 		color: #9e7e2f;
 	}
 	
+	.comp_lang {
+		padding: 0 1em 0 .2em; 
+		white-space: nowrap;
+	}
+	
+	@media (max-width: 750px){
+		.header {
+			grid-template-columns: auto;
+			grid-template-areas:
+				"name name"
+				"photo contact"
+				"desc desc";
+		}
+		.experience {
+			grid-template-columns: auto;
+			grid-template-areas:
+				"title title"
+				"i2r i2r"
+				"gifs gifs"
+				"nii upc";
+		}
+		
+		.education {
+			grid-template-areas:
+				"title title title"
+				"ntu ntu ntu"
+				"upc upc upc"
+				"lang lang lang"
+				"skills skills skills"
+				"skills2 skills2 skills2";
+		}
+		.header h1 {
+			text-align: center;  
+		}
+		
+		.edu_item {
+			grid-template-columns: 1fr 4fr;
+			margin: auto;
+		}
+		
+		#gifs {
+			grid-template-areas:
+				"logo info1 info1"
+				"logo info2 info2"
+				"project project project";
+			grid-row-gap: 0em;
+		}
+		
+		
+		#skills {
+			grid-template-columns: auto;
+			grid-template-areas:
+				"lang"
+				"hobby";
+		}
+		.comp_lang {
+			white-space: inherit;
+		}
+	}
+	
+	@media (max-width: 750px and min-width: 400px){
+		.header {
+			grid-template-columns: auto;
+			grid-template-areas:
+				"name name name"
+				". photo ."
+				"desc desc desc"
+				"contact contact contact";
+		}
+	}
+
+	@media (max-width: 1050px){
+		  body {
+			width: auto;
+			font-size: .8em;
+		  }
+	}
+	
+	@media (max-width: 480px){
+		  body {
+			width: 480px;
+		  }
+	}	
 	
