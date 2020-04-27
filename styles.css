@@ -240,10 +240,11 @@
 	.keywords hr {
 		width:25%;
 		text-align: center;
-		height: .05em;
-		border-width: 0;
-		color: #384B7C;;
-		background-color: #384B7C;;
+		height: .0pt;
+		border-style: solid;
+		border-width: .25pt;
+		color: #384B7C;
+		background-color: #384B7C;
 		margin-top: -.5em;
 	}
 	
