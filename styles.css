@@ -36,6 +36,8 @@
 		overflow: hidden;
 		text-align: center;
 		color: #384B7C;
+		padding-top: 1em;
+		padding-bottom: .5em;
 	}
 	.heading:before, .heading:after {
 	  content: "";
@@ -53,6 +55,9 @@
 		font-size:1.5em; 
 		margin-inline-start: 5em; 
 		margin-inline-end: 5em;
+		padding-bottom: 0;
+		padding-top: .5em;
+		
 	}
 	.honors-heading .heading:before, .honors-heading .heading:after {
 	  border-bottom: 1px dashed;
@@ -427,7 +432,7 @@
 				"one two"
 				"three four";
 		}
-		
+
 	}
 
 
