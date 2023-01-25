@@ -201,7 +201,7 @@
 	}
 
 	#tiktok {
-		grid-template-columns: 0fr 4fr 6fr;
+		grid-template-columns: 0fr 3fr 6fr;
 		grid-template-areas:
 			"logo info desc "
 			"project project project"
