@@ -371,6 +371,24 @@
 			grid-template-columns: 2fr 7fr;
 		}
 		
+		#tiktok {
+			grid-template-columns: 0fr 10fr;
+			grid-template-areas:
+				"logo info"
+				"desc desc"
+				"project project"
+				"keyword keyword";
+		}
+
+		#az {
+			grid-template-columns: 0fr 10fr;
+			grid-template-areas:
+				"logo info"
+				"desc desc"
+				"project project"
+				"keyword keyword";
+		}
+
 		#i2r {
 			grid-template-columns: 2fr 6fr 1fr;
 			grid-template-rows: 3em 3em 3em 1em auto;
