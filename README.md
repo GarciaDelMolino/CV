@@ -7,13 +7,13 @@
 ## Professional Experience
 
 ### AstraZeneca · Barcelona · 2024–Present
-**AI Engineer, Center for AI**
+**Associate Principal AI Engineer, Center for AI**
 
 AI Engineering and platform delivery for drug discovery. Reproducible ML pipelines and production-ready AI applications. Technical lead and community builder across R&D.
 
 **Main Responsibilities**
 - Technical lead for AI/ML applications and scientific software, from backend services and evaluation tooling to production deployment and observability.
-- Ownership of Arete roadmap: design and delivery of the <code>cai-arete</code> package, Kubernetes and WandB CLI helpers, and multi-cluster compute strategy (Jade/Iron/Onyx).
+- Ownership of Arete roadmap: design and delivery of the <code>cai-arete</code> package, Kubernetes and WandB CLI helpers, and multi-cluster compute strategy (cloud vs on-premise).
 - Ownership of CI/CD, release management, engineering standards, and developer tooling (Poetry, Artifactory) across shared codebases.
 - Continuous enforcement of code quality: SonarQube, pytest coverage targets (25–60%), PR review process.
 - Recruitment and management of external engineering resources: project scope, work allocation, and stakeholder alignment.
