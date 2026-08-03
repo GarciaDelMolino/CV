@@ -13,7 +13,7 @@ AI Engineering and platform delivery for drug discovery. Reproducible ML pipelin
 
 **Main Responsibilities**
 - Technical lead for AI/ML applications and scientific software, from backend services and evaluation tooling to production deployment and observability.
-- Ownership of Arete roadmap: design and delivery of the <code>cai-arete</code> package, Kubernetes and WandB CLI helpers, and multi-cluster compute strategy (cloud vs on-premise).
+- Ownership of Arete roadmap: design and delivery of the `cai-arete` package, Kubernetes and WandB CLI helpers, and multi-cluster compute strategy (cloud vs on-premise).
 - Ownership of CI/CD, release management, engineering standards, and developer tooling (Poetry, Artifactory) across shared codebases.
 - Continuous enforcement of code quality: SonarQube, pytest coverage targets (25–60%), PR review process.
 - Recruitment and management of external engineering resources: project scope, work allocation, and stakeholder alignment.
@@ -42,7 +42,7 @@ AI Engineering and platform delivery for drug discovery. Reproducible ML pipelin
 
 *Agentic AI · Reproducible Pipelines · GitHub Actions · CI/CD · DevOps* 
 
-*FastAPI · Kubernetes  · Python · LlamaIndex · Docker · Redis · OpenTelemetry · SonarQube*
+*FastAPI · Kubernetes  · Python · LlamaIndex · Redis · OpenTelemetry · SonarQube · Docker · JFrog Artifactory*
 
 ---
 
