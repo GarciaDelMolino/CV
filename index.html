@@ -17,18 +17,17 @@
 	<div class="header">
 		<div style="grid-area: photo;"> <img  src="IMG/hi_larger.png", style="height:12em; align: right;border-radius: 5%/7.5%;"> </div> <!-- ana_small.jpg or hi.png -->
 		<div style="grid-area: name;"> <h1>Ana García del Molino, PhD</h1> </div>
-		<div style="grid-area: desc; align: left; font-style: italic; padding: 0 3em 0 3em;"> 
-		<p> I apply state of the art ML to multi-source inputs to achieve better user experience, efficient use of business data and ultimately increased revenue. </p>
-		<p>In return, I expect mentorship and to expand my business knowledge. </p>
+		<div style="grid-area: desc; align: left; font-style: italic; padding: 0 3em 0 3em;">
+		<p> I engineer production AI systems that accelerate drug discovery — from reproducible deep learning pipelines to scalable agentic tooling for research scientists. </p>
+		<p> I set technical direction, build the infrastructure others rely on, and bring people along on the journey. </p>
 		</div>
+		<!--
 		<div class="about-heading" style="grid-area: about; font-style: normal;">
 			<h2 class="heading">Who would you be hiring?</h2>
-			<p> I'm used to embiguous and fast-paced environments, where the objectives and methodology need defining and continuous re-assessment. I deep dive, take ownership and deliver results. I have 5yr+ experience in Cloud Environments.</p>
-		    <p> I love a good brainstorming. I am analytical and always down to assess the suitability of the proposed approaches, own or otherwise. </p>
-			<p> I enjoy working in multicultural and cross-domain teams. There's so much to learn from each other in such diverse environments. </p>
-			<p> After a decade in Asia, I'm currently on a road trip between India and Barcelona, where my next adventure shall begin mid-October. </p>
+			<p> I'm used to ambiguous, fast-paced environments where the problems and the methods need defining together with the scientists using them. I take ownership of the full picture — from architecture decisions to production reliability — and I deliver. </p>
+			<p> I love a good brainstorming. I'm analytical and always ready to challenge the proposed approach — mine included. And I enjoy building communities as much as systems: getting people excited about new tools and watching teams go from zero to shipping is as rewarding as the engineering itself. </p>
 		</div>
-
+		-->
 		<div style="grid-area: contact;" align="right">			
 			<table>
 			  <tr>
@@ -61,6 +60,83 @@
 	<div class="experience">
 		<h2 class="heading" style="grid-area: title;">Professional Experience</h2>
 		
+		<div class="exp_item" id="az" style="grid-area: az;">
+			<div style="grid-area: logo;"><a href="https://www.astrazeneca.com/"> <img src="IMG/az_logo.svg" style="width: 3em; align: left; padding: 0 0 0 1em;"> </a></div>
+			<div style="grid-area: info; padding: 0 0 0 1em;" align="left">
+				<table>
+				  <tr>
+					<td align="right"><img class="icon" src="IMG/icons/map-pin.svg"> </td>
+					<td align="left"><a href="https://www.astrazeneca.com/" style="color:#000000">AstraZeneca</a>, Barcelona</td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon" src="IMG/icons/calendar.svg"></td>
+					<td align="left">2024–Present</td>
+				  </tr>
+				  <tr>
+					<td align="right"><img class="icon" src="IMG/icons/info.svg"></td>
+					<td align="left">AI Engineer, Center for AI</td>
+				  </tr>
+				</table>
+			</div>
+			<div style="grid-area: desc; padding: 0 0 0 1em;" align="center">
+				<b>AI Engineering for computational drug discovery.<br>
+				Production pipelines, applied LLM tooling, and company-wide AI enablement.<br>
+				Technical lead and community builder across CAI and R&amp;D.
+				</b>
+			</div>
+			<div class="project_desc">
+				<table>
+				<tr style="vertical-align:top">
+					<td style="width:45%">
+					Main Responsibilities:
+					<ul style="padding-inline-start: 2em; margin-block-end: 0.5em; margin-block-start: 0.5em;">
+						<li>Technical lead for AI/ML pipeline development and deployment on Kubernetes (Azimuth), ensuring production availability and operational continuity.</li>
+						<li>Responsible for CAI's engineering strategy: CI/CD with GitHub Actions, semver automation, Docker/Harbor image management, and Artifactory package publishing.</li>
+						<li>Continuous enforcement of code quality standards: SonarQube integration, pytest coverage targets (25–60%), PR review process.</li>
+						<li>Creation of developer guides and shared tooling (Poetry, WandB, S3, JFrog) to enable reliable contributions to common codebases across CAI.</li>
+						<li>Recruitment and management of external engineering resources: definition of project scope, allocation of work, and alignment of delivery priorities with internal stakeholders.</li>
+						<li>Mentoring of new starters and active community outreach as AZ representative to the broader AI community.</li>
+					</ul>
+					</td>
+					<td>
+					AI Engineering for Drug Discovery: MLAB
+					<ul style="margin-block-start: 0.5em; margin-block-end: 0.5em;">
+						<li>Delivered Library Generation and DeepScreening Hit Selection pipelines end-to-end, empowering experimental scientists to run lead optimization experiments autonomously.</li>
+						<li>Maintained foundational MLAB packages; raised test coverage from 0% and onboarded the team to feature-based branch development with isolated component environments (15+ Docker images in Harbor).</li>
+					</ul>
+					Technical Leadership &amp; Design: Sophia
+					<ul style="margin-block-start: 0.5em; margin-block-end: 0.5em;">
+						<li>Deployed DocEval and integrated it into the Sophia UI: one-click protocol evaluation against any benchmark, with token cost tracking.</li>
+						<li>Ensured production reliability: SSO support for large AD group memberships, CI/CD consolidation onto a unified deployment action, rolling update strategy to eliminate downtime, and Phoenix/OTel tracing.</li>
+					</ul>
+					Community &amp; Knowledge Sharing: Software Development for AI CoP
+					<ul style="margin-block-start: 0.5em; margin-block-end: 0.5em;">
+						<li>Organized and led a company-wide agentic AI hackathon (April 2026) across 6 geographies and multiple business units; structured 14 cross-functional teams, 7 Immersion Week sessions (40–60 attendees each).</li>
+						<li>Took 40+ participants from near-zero proficiency to hands-on delivery in two weeks; post-event surveys showed ~80–95% adoption intent for core AZ tools (AI Gateway, RAGify, Agent Mesh, LangFlow).</li>
+						<li>7 teams presented live demos to EAIU Leadership; secured a 3-month funded follow-up and generated 10+ reusable open-source services (MCP servers, RAG pipelines, multi-agent orchestrators).</li>
+					</ul>
+					</td>
+				</tr>
+				</table>
+				<div style="margin-top: 0.5em;">
+				Key takeaways and demonstrated skills as per my internal evaluations:
+				<ul style="margin-block-end: 0.5em; margin-block-start: 0.5em;">
+					<li> I have set the technical direction for engineering across CAI — not just implementing solutions, but defining the practices and standards the team now builds on. </li>
+					<li> I have consistently bridged the gap between research scientists and production systems, translating scientific needs into reliable infrastructure without losing scientific flexibility. </li>
+					<li> I have built and mobilised communities around AI adoption, taking people from zero to hands-on delivery and earning the trust of leadership to fund the follow-up. </li>
+					<li> I have grown in my ability to deliver through others — through mentorship, shared tooling, and clear documentation — not just through my own code. </li>
+				</ul>
+				</div>
+			</div>
+			<div class="keywords">
+				<p>
+				Agentic AI · LLMOps · CI/CD · Kubernetes · FastAPI · MLOps · Reproducible Pipelines · Knowledge Graphs · RAG
+				<hr>
+				Python · PyTorch · LlamaIndex · Docker · Redis · OpenTelemetry · GitHub Actions · Next.js · SonarQube
+				</p>
+			</div>
+		</div>
+
 		<div class="exp_item" id="tiktok" style="grid-area: tiktok;">
 			<div style="grid-area: logo;"><a href="https://www.bytedance.com/en/"> <img  src="IMG/bytedance.png", style="width:5em; align: left; padding: 0 0 0 1em;"> </a></div>
 			<div style="grid-area: info; padding: 0 0 0 1em;" align="left">
@@ -91,7 +167,7 @@
 					<td style="width:45%">
 					Technical counterpart for TikTok Live products and Business Integrity to define vision and deploy new features. 
 					<br><br>
-					Main Responsabilities:
+					Main Responsibilities:
 					<ul style="padding-inline-start: 2em; margin-block-end: 0.5em; margin-block-start: 0.5em;">
 					<li>Technical lead for code development and operations of online real-time services.</li>
 					<li>Responsible for code development, release, and maintenance.</li>
@@ -125,6 +201,7 @@
 					</td>
 				</tr>
 				</table>
+				<!--
 				<div>
 				Key takeaways and demonstrated skills as per my internal evaluations:
 				<ul style="margin-block-end: 0.5em; margin-block-start: 0.5em;">
@@ -135,6 +212,7 @@
 					<li> I have mentored and evaluated interns toward their transition to full-time employees.</li>
 				</ul>
 				</div>
+				-->
 			</div>				
 			<div class="keywords" >		
 				<p>
