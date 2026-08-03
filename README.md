@@ -13,32 +13,34 @@ AI Engineering and platform delivery for drug discovery. Reproducible ML pipelin
 
 **Main Responsibilities**
 - Technical lead for AI/ML applications and scientific software, from backend services and evaluation tooling to production deployment and observability.
-- Development of platform capabilities for scientists: Kubernetes-based execution, containerised jobs, artifact handling, and scalable compute.
-- Ownership of CI/CD, release management, engineering standards, and developer tooling (Poetry, WandB, S3, JFrog) across shared codebases.
+- Ownership of Arete roadmap: design and delivery of the <code>cai-arete</code> package, Kubernetes and WandB CLI helpers, and multi-cluster compute strategy (Jade/Iron/Onyx).
+- Ownership of CI/CD, release management, engineering standards, and developer tooling (Poetry, Artifactory) across shared codebases.
 - Continuous enforcement of code quality: SonarQube, pytest coverage targets (25–60%), PR review process.
 - Recruitment and management of external engineering resources: project scope, work allocation, and stakeholder alignment.
-- Mentoring of new starters and active community outreach as AZ representative to the broader AI community.
+- Mentoring and 1:1 coaching of scientists and engineers — unblocking workflows, guiding contributors through reviews, and supporting career development.
 
 **AI Engineering for Drug Discovery - MLAB**  
 - Delivered Library Generation and DeepScreening Hit Selection pipelines end-to-end, empowering experimental scientists to run lead optimization experiments autonomously.  
-- Maintained foundational MLAB packages; raised test coverage from 0% and onboarded the team to feature-based branch development with isolated component environments (15+ Docker images in Harbor).
+- Maintained foundational MLAB packages; raised test coverage and onboarded the team to feature-based branch development with isolated component environments (15+ Docker images in Harbor).
 
 **Technical Leadership & Design - Sophia**  
 - Deployed DocEval and integrated it into the Sophia UI: one-click protocol evaluation against any benchmark, with token cost tracking.  
-- Ensured production reliability: SSO support for large AD group memberships, CI/CD consolidation onto a unified deployment action, rolling update strategy to eliminate downtime, and Phoenix/OTel tracing.
+- Ensured production reliability: SSO support for large AD group memberships, CI/CD consolidation onto a unified deployment action, Phoenix/OTel tracing.
 
 **Community & Knowledge Sharing — Software Development for AI CoP**  
-- Organized and led a company-wide agentic AI hackathon across 6 geographies and multiple business units; structured 14 cross-functional teams, 7 Immersion Week sessions (40–60 attendees each).  
+- Led a company-wide agentic AI hackathon across 6 geographies and multiple business units; structured 14 cross-functional teams, 7 training sessions (40–60 attendees each).  
 - Took 40+ participants from near-zero proficiency to hands-on delivery in two weeks; post-event surveys showed ~80–95% adoption intent for core AZ tools (AI Gateway, RAGify, Agent Mesh, LangFlow).
 
 >**Key takeaways**
 >- I have set the technical direction for engineering across CAI — not just implementing solutions, but defining the practices and standards the team now builds on.  
->- I have consistently bridged the gap between research scientists and production systems, translating scientific needs into reliable infrastructure without losing scientific flexibility.  
+>- I have consistently bridged the gap between research scientists and production systems, translating scientific needs into reliable infrastructure without losing scientific flexibility.
+>- Arete enables scientists to run large-scale GPU workloads — including multi-GPU inference via Volcano scheduling — with a 67% reduction in MLAB compute cost year-on-year
 >- I have built and mobilised communities around AI adoption, taking people from zero to hands-on delivery.  
+>- I am available at the 1:1 level — for the scientist who can't get their job to run, needs a review, or an updated workflow.
 >- I have grown in my ability to deliver through others — through leadership, shared tooling, and clear documentation — not just through my own code.
 
 
-*Agentic AI · Reproducible Pipelines · GitHub Actions · CI/CD* 
+*Agentic AI · Reproducible Pipelines · GitHub Actions · CI/CD · DevOps* 
 
 *FastAPI · Kubernetes  · Python · LlamaIndex · Docker · Redis · OpenTelemetry · SonarQube*
 
