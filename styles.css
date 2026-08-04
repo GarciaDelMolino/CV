@@ -113,6 +113,7 @@
 		grid-template-rows: auto;
 		grid-template-areas:
 			"title title"
+			"az az"
 			"tiktok tiktok"
 			"bigo i2r"
 			"gifs i2r"
@@ -210,6 +211,14 @@
 			". logo . info3 info3"
 			"project project project project project"
 			"keyword keyword keyword keyword keyword";
+	}
+
+	#az {
+		grid-template-columns: 0fr 3fr 6fr;
+		grid-template-areas:
+			"logo info desc"
+			"project project project"
+			"keyword keyword keyword";
 	}
 
 	#tiktok {
@@ -350,6 +359,7 @@
 			grid-template-columns: auto;
 			grid-template-areas:
 				"title title"
+				"az az"
 				"tiktok tiktok"
 				"bigo bigo"
 				"i2r i2r"
@@ -361,6 +371,24 @@
 			grid-template-columns: 2fr 7fr;
 		}
 		
+		#tiktok {
+			grid-template-columns: 0fr 10fr;
+			grid-template-areas:
+				"logo info"
+				"desc desc"
+				"project project"
+				"keyword keyword";
+		}
+
+		#az {
+			grid-template-columns: 0fr 10fr;
+			grid-template-areas:
+				"logo info"
+				"desc desc"
+				"project project"
+				"keyword keyword";
+		}
+
 		#i2r {
 			grid-template-columns: 2fr 6fr 1fr;
 			grid-template-rows: 3em 3em 3em 1em auto;
