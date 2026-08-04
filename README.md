@@ -1,6 +1,6 @@
 # Ana García del Molino, PhD
 
-*I engineer production AI systems that accelerate drug discovery — from reproducible deep learning pipelines to scalable agentic tooling for research scientists. I set technical direction, build the infrastructure others rely on, and bring people along on the journey.*
+*I build production grade AI systems for reproducible medical discovery. I set technical direction, design the infrastructure others rely on, and bring people along on the journey.*
 
 ---
 
@@ -17,7 +17,7 @@ AI Engineering and platform delivery for drug discovery. Reproducible ML pipelin
 - Ownership of CI/CD, release management, engineering standards, and developer tooling (Poetry, Artifactory) across shared codebases.
 - Continuous enforcement of code quality: SonarQube, pytest coverage targets (25–60%), PR review process.
 - Recruitment and management of external engineering resources: project scope, work allocation, and stakeholder alignment.
-- Mentoring and 1:1 coaching of scientists and engineers — unblocking workflows, guiding contributors through reviews, and supporting career development.
+- Mentoring and 1:1 support of scientists and engineers — from career development and code reviews to ad-hoc troubleshooting of software and infrastructure issues across the team.
 
 **AI Engineering for Drug Discovery - MLAB**  
 - Delivered Library Generation and DeepScreening Hit Selection pipelines end-to-end, empowering experimental scientists to run lead optimization experiments autonomously.  
@@ -36,7 +36,7 @@ AI Engineering and platform delivery for drug discovery. Reproducible ML pipelin
 >- I have consistently bridged the gap between research scientists and production systems, translating scientific needs into reliable infrastructure without losing scientific flexibility.
 >- Arete enables scientists to run large-scale GPU workloads — including multi-GPU inference via Volcano scheduling — with a 67% reduction in MLAB compute cost year-on-year
 >- I have built and mobilised communities around AI adoption, taking people from zero to hands-on delivery.  
->- I am available at the 1:1 level — for the scientist who can't get their job to run, needs a review, or an updated workflow.
+>- I am my team's go-to for unblocking, resolving both technical and organization-level issues so colleagues can keep delivering.
 >- I have grown in my ability to deliver through others — through leadership, shared tooling, and clear documentation — not just through my own code.
 
 
